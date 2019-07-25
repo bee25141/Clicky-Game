@@ -7,7 +7,7 @@ import Beaches from "./beaches.json";
 
 class App extends Component {
   state = {
-    Beaches,
+    beaches: Beaches,
     score: 0,
     topScore: 0
   }
@@ -20,11 +20,9 @@ class App extends Component {
 
         <Jumbotron />
 
-        <CardContainer >
 
-            <ImgCard ></ImgCard>
+            <ImgCard beaches={Beaches}></ImgCard>
 
-        </CardContainer>
 
       
 

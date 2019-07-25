@@ -7,7 +7,7 @@ function NavBar(props){
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="navbar-brand" href="">
+                        <a className="navbar-brand" href="/">
                             CLICKY GAME
                         </a>
                     </li>
