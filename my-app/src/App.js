@@ -7,7 +7,9 @@ import ImgCard from "./components/ImgCard/ImgCard"
 class App extends Component {
   state = {
     clicked: false,
-    clickMatch: 0
+    clickMatch: 0,
+    score: 0,
+    topScore: 0
   }
 
   render() {

@@ -5,18 +5,21 @@ function NavBar(props){
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <ul>
+                <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
                         <a className="navbar-brand" href="">
                             CLICKY GAME
                         </a>
                     </li>
 
-                    <li className="nav-item">
-                        Click on an image to get started!
-                    </li>
+                    <li className="navbar-text">
 
-                    <li className="nav-item">
+                        <h5> Click on an image to get started! </h5>
+                    </li>
+                </ul>
+                
+                <ul className="navbar-nav ml-auto">
+                    <li className="navbar-text">
                         Score:
                         {props.score}    |
                         Top Score:
