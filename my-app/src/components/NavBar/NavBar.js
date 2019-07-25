@@ -21,9 +21,9 @@ function NavBar(props){
                 <ul className="navbar-nav ml-auto">
                     <li className="navbar-text">
                         Score:
-                        {props.score}    |
-                        Top Score:
-                        {props.topScore}
+                         {props.score}    |
+                        Top Score: 
+                         {props.topScore}
                     </li>
                 </ul>
             </nav>

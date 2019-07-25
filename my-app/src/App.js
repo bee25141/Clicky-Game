@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
+        <NavBar score={this.state.score} topScore={this.state.topScore}/>
         <Jumbotron />
 
       
