@@ -11,11 +11,6 @@ function NavBar(props){
                             CLICKY GAME
                         </a>
                     </li>
-
-                    <li className="navbar-text">
-
-                        <h5> Click on an image to get started! </h5>
-                    </li>
                 </ul>
                 
                 <ul className="navbar-nav ml-auto">
