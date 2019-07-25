@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import NavBar from "./components/NavBar/NavBar"
 import Jumbotron from "./components/Jumbotron/Jumbotron"
 import ImgCard from "./components/ImgCard/ImgCard"
 
@@ -8,10 +9,14 @@ class App extends Component {
     clicked: false,
     clickMatch: 0
   }
+
   render() {
     return (
       <div>
-      <Jumbotron />
+        <NavBar />
+        <Jumbotron />
+
+      
 
 
       </div>
