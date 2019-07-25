@@ -2,16 +2,16 @@ import React, {Component} from "react";
 import NavBar from "./components/NavBar/NavBar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
 import CardContainer from "./components/CardContainer/CardContainer"
-import ImgCard from "./components/ImgCard/ImgCard"
-
+import ImgCard from "./components/ImgCard/ImgCard";
+import Beaches from "./beaches.json";
 
 class App extends Component {
   state = {
-    clicked: false,
-    clickMatch: 0,
+    Beaches,
     score: 0,
     topScore: 0
   }
+
 
   render() {
     return (
