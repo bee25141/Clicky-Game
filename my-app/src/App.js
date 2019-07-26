@@ -10,11 +10,13 @@ class App extends Component {
     beaches: Beaches,
     score: 0,
     topScore: 0
-  }
+  };
 
   handleClick = id => {
     console.log("click1", id)
-  }
+    let itemBeach = this.state.beaches.find(obj => obj.id === id)
+    console.log(itemBeach)
+  };
 
 
   render() {
