@@ -8,7 +8,7 @@ function ImgCard(props){
         {
             props.beaches.map(beach =>
                 (
-                    <div className="card" key={beach.id} onClick={props.handleClick}>
+                    <div className="card" key={beach.id} onClick={() => props.handleClick(beach.id)}>
                         <div className="img-container">
                             <img alt={beach.name} src={beach.image} />
                         </div>

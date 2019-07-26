@@ -12,8 +12,8 @@ class App extends Component {
     topScore: 0
   }
 
-  handleClick = event => {
-    console.log("click1")
+  handleClick = id => {
+    console.log("click1", id)
   }
 
 
