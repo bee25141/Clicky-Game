@@ -12,6 +12,10 @@ class App extends Component {
     topScore: 0
   }
 
+  handleClick = event => {
+    console.log("click1")
+  }
+
 
   render() {
     return (
@@ -21,7 +25,7 @@ class App extends Component {
         <Jumbotron />
 
 
-            <ImgCard beaches={Beaches}></ImgCard>
+            <ImgCard beaches={Beaches} handleClick={this.handleClick}></ImgCard>
 
 
       
