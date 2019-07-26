@@ -12,6 +12,17 @@ class App extends Component {
     topScore: 0
   };
 
+  gameOver = () => {
+    if (this.state.score > this.state.topScore){
+
+      this.setState({topScore: this.state.score});
+    }
+    this.state.beaches.forEach(card => {
+      card.count = 0;
+    });
+    this.setState({score: 0})
+  };
+
   handleClick = id => {
 
     let itemBeach = this.state.beaches.find(obj => obj.id === id)
@@ -24,6 +35,7 @@ class App extends Component {
 
     } else {
       console.log("game over")
+      this.gameOver();
     }
   };
 

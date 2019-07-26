@@ -2,7 +2,7 @@ import React from "react";
 import "./Style.css"
 
 function ImgCard(props){
-    console.log(props)
+    
     return (
         <div className="row">
         {
