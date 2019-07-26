@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import NavBar from "./components/NavBar/NavBar";
 import Jumbotron from "./components/Jumbotron/Jumbotron";
-import CardContainer from "./components/CardContainer/CardContainer"
 import ImgCard from "./components/ImgCard/ImgCard";
 import Beaches from "./beaches.json";
+import "./Style.css"
 
 class App extends Component {
   state = {
@@ -12,7 +12,9 @@ class App extends Component {
     topScore: 0
   };
 
+  // Function for resetting score, count and high score if applicable when game is over
   gameOver = () => {
+
     if (this.state.score > this.state.topScore){
 
       this.setState({topScore: this.state.score});
@@ -23,6 +25,7 @@ class App extends Component {
     this.setState({score: 0})
   };
 
+  // This function handles the score and state when each card is clicked
   handleClick = id => {
 
     let itemBeach = this.state.beaches.find(obj => obj.id === id)
@@ -47,12 +50,7 @@ class App extends Component {
 
         <Jumbotron />
 
-
-            <ImgCard beaches={Beaches} handleClick={this.handleClick}></ImgCard>
-
-
-      
-
+        <ImgCard beaches={Beaches} handleClick={this.handleClick}></ImgCard>
 
       </div>
     );
