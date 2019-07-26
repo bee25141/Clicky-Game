@@ -13,12 +13,17 @@ class App extends Component {
   };
 
   handleClick = id => {
-    console.log("click1", id)
+
     let itemBeach = this.state.beaches.find(obj => obj.id === id)
-    console.log(itemBeach)
+
     if (itemBeach.count === 0){
+
       itemBeach.count = itemBeach.count + 1;
       this.setState({score: this.state.score + 1});
+      this.state.beaches.sort(() => Math.random() - 0.5);
+
+    } else {
+      console.log("game over")
     }
   };
 
