@@ -1,0 +1,26 @@
+{
+  "name": "Clicky-Game",
+  "version": "1.0.0",
+  "description": "React memory game",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "cd my-app && npm run build",
+    "deploy": "cd my-app && npm run deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bee25141/Clicky-Game.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bee25141/Clicky-Game/issues"
+  },
+  "homepage": "https://bee25141.github.io/Clicky-Game/"
+}
