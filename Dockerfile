@@ -7,4 +7,4 @@ CMD ["npm", "run", "start"]
 
 FROM nginx
 EXPOSE 80
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /app/my-app/build /usr/share/nginx/html

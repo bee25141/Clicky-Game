@@ -1,27 +1,34 @@
 {
-  "name": "Clicky-Game",
-  "version": "1.0.0",
-  "description": "React memory game",
-  "main": "index.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage":"https://bee25141.github.io/Clicky-Game/",
   "dependencies": {
-    "gh-pages": "^2.0.1"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "cd my-app && npm run build",
-    "dev": "cd my-app && npm run start",
-    "deploy": "cd my-app && npm run deploy",
-    "test": "cd my-app && npm run test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bee25141/Clicky-Game.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bee25141/Clicky-Game/issues"
-  },
-  "homepage": "https://bee25141.github.io/Clicky-Game/"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
