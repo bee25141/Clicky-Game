@@ -3,6 +3,12 @@
     "Image": {
     "Name": "422728243729.dkr.ecr.us-east-1.amazonaws.com/clickygame:latest",
     "Update": "true"
-  }
+  },
+  "Ports": [
+    {
+      "ContainerPort": 80,
+      "HostPort": 8080
+    }
+  ]
 
 }
