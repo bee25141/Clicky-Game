@@ -8,10 +8,10 @@ Clicky game is a memory game built with React.js and deployed in a Docker contai
 The application is deployed in a Docker container using AWS Elastic Beanstalk @ http://clickygame-env.pxk2ww3yfs.us-east-1.elasticbeanstalk.com/
 
 # Built With
-Docker
-Nginx
-Amazon Web Services
-React.js
+Docker <br/>
+Nginx <br/>
+Amazon Web Services <br/>
+React.js <br/>
 React-Bootstrap - The CSS framework used. <br/>
 
 # Authors
